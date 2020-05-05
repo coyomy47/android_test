@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MidExam</string>
+    <string name="doYouWantToDelete">doYouWantToDelete</string>
+    <string name="confirm">confirm</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+</resources>
