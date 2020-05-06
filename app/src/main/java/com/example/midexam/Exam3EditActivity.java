@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.Serializable;
+
 public class Exam3EditActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +29,9 @@ public class Exam3EditActivity extends AppCompatActivity {
 
 
 
-                Memo memo = new Memo(title);
+                memo memo = new memo(title);
                 Intent intent = new Intent();
-                intent.putExtra("MEMO", memo);
+                intent.putExtra("MEMO", (Serializable) memo);
                 setResult(RESULT_OK, intent);
                 finish();
             }

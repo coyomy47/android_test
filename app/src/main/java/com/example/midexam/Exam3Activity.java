@@ -14,16 +14,16 @@ public class Exam3Activity extends AppCompatActivity {
 
 
    Exam3Adapter Exam3Adapter;
-    ArrayList<Memo> arrayList;
+    ArrayList<memo> arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam3);
 
-        arrayList = new ArrayList<Memo>();
-        arrayList.add(new Memo("one"));
-        arrayList.add(new Memo("two"));
+        arrayList = new ArrayList<memo>();
+        arrayList.add(new memo("one"));
+        arrayList.add(new memo("two"));
         Exam3Adapter= new Exam3Adapter(this, arrayList);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
